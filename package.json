@@ -1,0 +1,30 @@
+{
+  "name": "backend-tools",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "lint": "eslint . --ext .js,.ts --ignore-pattern node_modules/",
+    "update-game-data": "ts-node update-game-data.ts",
+    "update-marketboard": "ts-node update-marketboard.ts"
+  },
+  "dependencies": {
+    "@xivapi/js": "^0.4.1",
+    "dotenv": "^16.0.1",
+    "mongoose": "^6.4.6",
+    "ts-node": "^10.9.1",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "2.7.1",
+    "typescript": "4.7.4"
+  }
+}
