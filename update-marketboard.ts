@@ -69,6 +69,7 @@ async function updateMarketBoard(crafter: string) {
 		}
 	});
 
+	// @ts-ignore
 	let itemIds = [...itemSet];
 	let max = itemIds.length;
 	let dataCenters = await models.DataCenter.find({});
