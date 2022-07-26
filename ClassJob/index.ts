@@ -22,6 +22,8 @@ module.exports = {
 		try {
 			let page = 1;
 			do {
+				console.log("Fetching ClassJob data (Page  " + page + ") ");
+
 				// noinspection TypeScriptValidateJSTypes
 				response = await xiv.data.list("ClassJob", {
 					columns: columns,

@@ -90,6 +90,7 @@ module.exports = {
 		try {
 			let page = 1;
 			do {
+				console.log("Fetching recipe data (Page " + page + ") ");
 				// noinspection TypeScriptValidateJSTypes
 				response = await xiv.data.list("Recipe", {
 					columns: columns,

@@ -5,7 +5,7 @@ module.exports = {
 			url: process.env.MONGODB_URI,
 			options: {
 				useNewUrlParser: true,
-				dbName: "localhost",
+				dbName: process.env.MONGODB_DB,
 			},
 		},
 	},
@@ -14,7 +14,7 @@ module.exports = {
 			url: process.env.MONGODB_URI,
 			options: {
 				useNewUrlParser: true,
-				dbName: "localhost",
+				dbName: process.env.MONGODB_DB,
 			},
 		},
 	},
@@ -23,7 +23,7 @@ module.exports = {
 			url: process.env.MONGODB_URI,
 			options: {
 				useNewUrlParser: true,
-				dbName: "production",
+				dbName: process.env.MONGODB_DB,
 			},
 		},
 	},
