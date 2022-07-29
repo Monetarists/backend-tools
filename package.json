@@ -4,8 +4,10 @@
   "private": false,
   "scripts": {
     "lint": "eslint . --ext .js,.ts --ignore-pattern node_modules/",
-    "update-game-data": "ts-node update-game-data.ts",
-    "update-marketboard": "ts-node update-marketboard.ts"
+    "update-game-data": "dotenv -e .env.development.local -- ts-node update-game-data.ts",
+    "update-game-data:dev": "dotenv -e .env.development.local -- ts-node update-game-data.ts",
+    "update-game-data:staging": "dotenv -e .env.staging.local -- ts-node update-game-data.ts",
+    "update-game-data:prod": "dotenv -e .env.production.local -- ts-node update-game-data.ts"
   },
   "dependencies": {
     "@xivapi/js": "^0.4.1",

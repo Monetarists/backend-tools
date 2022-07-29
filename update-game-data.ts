@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 // @ts-ignore
 const yargs = require("yargs/yargs");
-// @ts-ignore
 let { hideBin } = require("yargs/helpers");
-// @ts-ignore
 const argv = yargs(hideBin(process.argv))
 	.usage(
 		"Usage: npm run update-game-data [-- -d ClassJob|Recipe|DataCenter|all]"

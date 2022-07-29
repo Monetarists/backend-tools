@@ -1,7 +1,6 @@
 // @ts-ignore
 const fs = require("fs");
 const path = require("path");
-require("dotenv").config({ path: ".env.local" });
 const Mongoose = require("mongoose");
 const basename = path.basename(__filename);
 const env = process.env.APP_ENV || "development";

@@ -35,31 +35,3 @@ npm run update-game-data -- -d Recipe
 ```
 npm run update-game-data -- -d Recipe -d ClassJob
 ```
-
-## Marketboard Data
-
-You can update your game data from [Universalis](https://universalis.app/) to obtain the latest market board information.
-
-### Basic use
-```
-Usage: npm run update-marketboard -- -c CRP|BSM|ARM|GSM|LTW|WVR|ALC|CUL|all
-
-Options:
-      --help     Show help                                             [boolean]
-      --version  Show version number                                   [boolean]
-  -c, --crafter                                                 [default: "all"]
-```
-
-You can target specific crafters using the examples below.
-
-### Updating only Carpenter data
-
-```
-npm run update-marketboard -- -c CRP
-```
-
-### Updating Carpenter and Alchemy data
-
-```
-npm run update-marketboard -- -c CRP -c ALC
-```
