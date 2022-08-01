@@ -1,4 +1,3 @@
-import { Pagination } from "./Pagination";
 import { ClassJob } from "./ClassJob";
 import { Item } from "./Item";
 
@@ -38,6 +37,16 @@ export interface RecipeResult {
 	ItemIngredient9: Item | null;
 
 	ItemResult: Item;
+}
+
+interface Pagination {
+	Page: number;
+	PageNext?: number;
+	PagePrev?: number;
+	PageTotal: number;
+	Results: number;
+	ResultsPerPage: number;
+	ResultsTotal: number;
 }
 
 export interface RecipeResponse extends Response {
