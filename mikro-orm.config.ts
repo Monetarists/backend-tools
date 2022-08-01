@@ -1,2 +1,2 @@
-import config from "./db/config/mikro-orm";
+import config from "./db/mikro-orm";
 export default config;

@@ -1,12 +1,12 @@
 import { Options } from "@mikro-orm/core";
 import { MariaDbDriver } from "@mikro-orm/mariadb";
-import { CustomBaseRepository } from "../CustomBaseRepository";
-import { Item } from "../entities/Item";
-import { ItemUICategory } from "../entities/ItemUICategory";
-import { ItemSearchCategory } from "../entities/ItemSearchCategory";
-import { ClassJob } from "../entities/ClassJob";
-import { DataCenter } from "../entities/DataCenter";
-import { Recipe } from "../entities/Recipe";
+import { CustomBaseRepository } from "./CustomBaseRepository";
+import { Item } from "./entities/Item";
+import { ItemUICategory } from "./entities/ItemUICategory";
+import { ItemSearchCategory } from "./entities/ItemSearchCategory";
+import { ClassJob } from "./entities/ClassJob";
+import { DataCenter } from "./entities/DataCenter";
+import { Recipe } from "./entities/Recipe";
 
 const config: Options<MariaDbDriver> = {
 	dbName: "monetarist",
