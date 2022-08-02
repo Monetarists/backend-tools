@@ -9,7 +9,7 @@ import { DataCenter } from "./entities/DataCenter";
 import { Recipe } from "./entities/Recipe";
 
 const config: Options<MariaDbDriver> = {
-	dbName: "monetarist",
+	dbName: process.env.DB_DATABASE,
 	type: "mariadb",
 	host: process.env.DB_HOST,
 	port: Number(process.env.DB_PORT),
